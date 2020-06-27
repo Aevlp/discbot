@@ -9,7 +9,8 @@
     "repository": "https://github.com/mason1901/ikoa-web",
     "env": {
         "TEAM_DRIVE_ID": {
-            "description": "the ID of the team drive"
+            "description": "the ID of the team drive",
+            "value": "0AK3K5Da5UEULUk9PVA"
         },
         "SA_JSON_1": {
             "description": "follow the tips and FAQ in README.md"
@@ -18,19 +19,24 @@
             "description": "follow the tips and FAQ in README.md"
         },
         "RCLONE_DESTINATION": {
-            "description": "the path where stores the downloaded data,for example:/ikuuu,don't add a \"/\" at the end"
+            "description": "the path where stores the downloaded data,for example:/ikuuu,don't add a \"/\" at the end",
+            "value": "/ikoa"
         },
         "LOG_PATH": {
-            "description": "the path where stores the downloaded statistic log, start with \"/\", for exmaple: /log"
+            "description": "the path where stores the downloaded statistic log, start with \"/\", for exmaple: /log",
+            "value": "/log"
         },
         "adminUser": {
-            "description": "the only user which you can login in the web page"
+            "description": "the only user which you can login in the web page",
+            "value": "Aevlp"
         },
         "adminPassword": {
-            "description": "the password for the admin user,at least 8 characters"
+            "description": "the password for the admin user,at least 8 characters",
+            "value": "Apple0206"
         },
         "herokuApp": {
-            "description": "the app url,for example:\"https://appname.herokuapp.com\", don't make mistake"
+            "description": "the app url,for example:\"https://appname.herokuapp.com\", don't make mistake",
+            "value": "https://ikoa-aev.herokuapp.com"
         },
         "SECRET_KEY": {
             "description": "used for the csrf token, it is an auto generated value",
@@ -45,7 +51,7 @@
         },
         "MONTHLY_ONLY_BOOL": {
             "description": "Only download videos which belong to monthly, true or false",
-            "value": "true"
+            "value": "false"
         }
 
     },
