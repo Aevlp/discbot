@@ -10,9 +10,9 @@ path = 'downloads'
 ## 创建子文件夹
 subfolder = true
 ## 下载封面图片（大）
-cover = true
+cover = false
 ## 下载封面图片（小）
-miniature = true
+miniature = false
 
 [behavior]
 ## policy <0-2>; 行为准则
@@ -51,7 +51,7 @@ video_format = "mp4"
 ## 将moov atom移动到文件顶部，仅 mp4 (ffmpeg: -movflags +faststart)
 web_optimized = true
 ## 测试版功能：给视频文件添加封面（仅 mp4 和 mkv 格式）
-cover_art = true
+cover_art = false
 ## 测试版功能：移除大咪咪电影封面中的两侧白边框 (147x200)
 crop_cover_art = true
 ## 将FFmpeg命令的输出记录到文件中
