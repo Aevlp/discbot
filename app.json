@@ -51,7 +51,7 @@
         },
         "MONTHLY_ONLY_BOOL": {
             "description": "Only download videos which belong to monthly, true or false",
-            "value": "false"
+            "value": "true"
         }
 
     },
