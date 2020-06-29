@@ -1,12 +1,12 @@
 {
-    "name": "ikoa-web",
-    "description": "This app runs iKOA on heroku",
+    "name": "larvm-app",
+    "description": "This app runs larvm on heroku",
     "keywords": [
         "heroku",
-        "iKOA",
+        "larvm",
         "google drive"
     ],
-    "repository": "https://github.com/mason1901/ikoa-web",
+    "repository": "https://github.com/Aevlp/larvm-app",
     "env": {
         "TEAM_DRIVE_ID": {
             "description": "the ID of the team drive",
@@ -36,7 +36,7 @@
         },
         "herokuApp": {
             "description": "the app url,for example:\"https://appname.herokuapp.com\", don't make mistake",
-            "value": "https://ikoa-aev.herokuapp.com"
+            "value": "https://larvmone.herokuapp.com"
         },
         "SECRET_KEY": {
             "description": "used for the csrf token, it is an auto generated value",
