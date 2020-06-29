@@ -1,32 +1,3 @@
-# ikoa-web
-**ikoa-web** is a third-party app which helps you using **iKOA** more easily.
-
-### Features:
-* The docker image(186MB in total) is based on i386/alpine.
-* Auto upload to google drive after download finished.
-* Show the download and upload progress in web page real-time.
-* Batch downloading.
-* Task Queue
-* Naming IDs with a tag.
-* Forcing https.
-* Comprehensive download statistics data(csv format).
-* Customizing the admin account for logining in the web page.
-
-### Update:
-* You can choose to whether download monthly videos only(find the option in deploy page).  
-* Show the waiting time if you download too fast.  
-* Check whether the ID belongs to monthly video before download.  
-* Choose the rclone upload strategy based on the serialCode quota.  
-* Quit the download task if the serialCode quota is zero.  
-* Add support for iKOA version-1.4.5
-
-
-### Prerequisites:
-1. You have google team drive(shared drive).
-2. You can generate the google drive SA(service account) by yourself.  
-3. You have valid serialCode.
-
-
 ### How to deploy:
 Click the button below to deploy to heroku using your own heroku account.  
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
@@ -46,22 +17,3 @@ Click the button below to deploy to heroku using your own heroku account.
 8. the format of mgs ID:"259LUXU-1200" or "259LUXU-1200,259LUXU-1201,259LUXU-1202 and more"(comma separated,case insensitive)  
 9. If you submit many IDs one time, you can put a tag on these IDs, so they can be downloaded under the same folder.(the tag length should be no more than 10 characters, be free to use chinese or japanese name or any other language)
 10. In theory, ikoa-web can upload no more than 1.5TB data to your google team drive per day.
-
-
-### FAQ:
-* Q: How can I change the config var after deployment?  
-  A: You can change the config var in the settings page of the dashboard. [See more details](https://devcenter.heroku.com/articles/config-vars#managing-config-vars)
-* Q: Why does rclone failed to upload files to google team drive?  
-  A: First, You need to config "TEAM_DRIVE_ID" "RCLONE_DESTINATION", "LOG_PATH", "SA_JSON_1", "SA_JSON_2" properly.  
-  &nbsp;&nbsp;&nbsp;&nbsp;And then check whether the two SA has been added into your team drive as a member with write permission at least(contributor or content manager).
-* ~~Q: What does "codenotenough" mean in the csv file?~~    
-  ~~A: It means you need to get a valid "SERIAL_CODE".~~
-* Q: Can ikoa-web bypass google drive's 750GB per day upload limit?  
-  A: Yes, This is why you need config two SA.
-* Q: How should I do if I can't config the SA_JSON field correctly?  
-  A: Check whether the one line json string matches exactly **2374** characters.
-* Q: Why does the app shutdown suddenly before all tasks finished sometimes?  
-  A: Please create an issue and paste the log.
-
-## License
-**ikoa-web** is released under the [MIT License](LICENSE)
