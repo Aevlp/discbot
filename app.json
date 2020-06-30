@@ -1,6 +1,6 @@
 {
-    "name": "larvm-app",
-    "description": "This app runs larvm on heroku",
+    "name": "marvel",
+    "description": "This app runs marvel on heroku",
     "keywords": [
         "heroku",
         "larvm",
