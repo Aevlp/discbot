@@ -1,12 +1,12 @@
 {
-    "name": "marvel",
-    "description": "This app runs marvel on heroku",
+    "name": "discbot",
+    "description": "This app runs discbot on heroku",
     "keywords": [
         "heroku",
-        "larvm",
+        "discbot",
         "google drive"
     ],
-    "repository": "https://github.com/Aevlp/marvel",
+    "repository": "https://github.com/Aevlp/discbot",
     "env": {
         "TEAM_DRIVE_ID": {
             "description": "the ID of the team drive",
